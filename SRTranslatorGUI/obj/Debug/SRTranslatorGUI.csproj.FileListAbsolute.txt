@@ -1,0 +1,16 @@
+C:\Users\omen\source\repos\SRTranslatorGUI\SRTranslatorGUI\bin\Debug\SRTranslatorGUI.exe.config
+C:\Users\omen\source\repos\SRTranslatorGUI\SRTranslatorGUI\bin\Debug\SRTranslatorGUI.exe
+C:\Users\omen\source\repos\SRTranslatorGUI\SRTranslatorGUI\bin\Debug\SRTranslatorGUI.pdb
+C:\Users\omen\source\repos\SRTranslatorGUI\SRTranslatorGUI\obj\Debug\SRTranslatorGUI.csprojAssemblyReference.cache
+C:\Users\omen\source\repos\SRTranslatorGUI\SRTranslatorGUI\obj\Debug\SRTranslatorGUI.Form1.resources
+C:\Users\omen\source\repos\SRTranslatorGUI\SRTranslatorGUI\obj\Debug\SRTranslatorGUI.Properties.Resources.resources
+C:\Users\omen\source\repos\SRTranslatorGUI\SRTranslatorGUI\obj\Debug\SRTranslatorGUI.csproj.GenerateResource.cache
+C:\Users\omen\source\repos\SRTranslatorGUI\SRTranslatorGUI\obj\Debug\SRTranslatorGUI.csproj.CoreCompileInputs.cache
+C:\Users\omen\source\repos\SRTranslatorGUI\SRTranslatorGUI\obj\Debug\SRTranslatorGUI.exe
+C:\Users\omen\source\repos\SRTranslatorGUI\SRTranslatorGUI\obj\Debug\SRTranslatorGUI.pdb
+C:\Users\omen\source\repos\SRTranslatorGUI\SRTranslatorGUI\obj\Debug\SRTranslatorGUI.srtinfo.resources
+C:\Users\omen\source\repos\SRTranslatorGUI\SRTranslatorGUI\bin\Debug\Microsoft.WindowsAPICodePack.dll
+C:\Users\omen\source\repos\SRTranslatorGUI\SRTranslatorGUI\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\omen\source\repos\SRTranslatorGUI\SRTranslatorGUI\bin\Debug\Microsoft.WindowsAPICodePack.xml
+C:\Users\omen\source\repos\SRTranslatorGUI\SRTranslatorGUI\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml
+C:\Users\omen\source\repos\SRTranslatorGUI\SRTranslatorGUI\obj\Debug\SRTranslatorGUI.csproj.CopyComplete

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29020.237
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SRTranslatorGUI", "SRTranslatorGUI\SRTranslatorGUI.csproj", "{756282A6-B5E3-4AC0-A6ED-44E23C61DBF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{756282A6-B5E3-4AC0-A6ED-44E23C61DBF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{756282A6-B5E3-4AC0-A6ED-44E23C61DBF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{756282A6-B5E3-4AC0-A6ED-44E23C61DBF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{756282A6-B5E3-4AC0-A6ED-44E23C61DBF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F9BB7D0-203B-4D4A-86E5-C6A1937667DC}
+	EndGlobalSection
+EndGlobal
