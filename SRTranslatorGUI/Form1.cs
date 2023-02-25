@@ -39,7 +39,8 @@ namespace SRTranslatorGUI
         //python -m srtranslator "file.srt" -i en -o es
         private void Button1_Click(object sender, EventArgs e)
         {
-
+            if (files is null)
+                return;
             translatesrtfiles();
         }
 
@@ -144,11 +145,17 @@ namespace SRTranslatorGUI
                 string inputFile = string.Format($"{comillas}{files[ID]}{comillas}");
                 cmdStreamWriter.WriteLineAsync(string.Format($"python -m srtranslator {inputFile} -i {scr_Source} -o {scr_Des}"));
             }
+            else
+            {
+                Debug.WriteLine("nex file");
+                MoveToNextFile();
+            }
         }
         public static void MoveToNextFile()
         {
             try
             {
+                Debug.WriteLine(ID +":::" +files.Length);
                  if (ID != files.Length - 1)
                 {
                     if (srtinfos[ID].Strstaus == STRFilestatustype.Complete)
@@ -413,6 +420,7 @@ namespace SRTranslatorGUI
         private void AddNewFilesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int indextemp = files.Length + 1;
+            string[] filestemp = new string[1];
             openFileDialog1.Filter = "srt files (*.srt)|*.srt";
             openFileDialog1.Title = "Add New Files";
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
@@ -420,12 +428,10 @@ namespace SRTranslatorGUI
                 //flowLayoutPanel1.Controls.Clear();
                 //srtinfos.Clear();
                 //ID = 0;
-                textBox1.Text = folderBrowserDialog1.SelectedPath;
-                
-                foreach(var addfile in openFileDialog1.FileNames)
-                {
-                    files.Append(addfile);
-                }
+
+                 textBox1.Text = folderBrowserDialog1.SelectedPath;
+
+                files = Extensions.AddElementsToArray(files, openFileDialog1.FileNames);
                 foreach (var file in openFileDialog1.FileNames)
                 {
                     srtinfo test = new srtinfo();
