@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>System.Threading.AccessControl</name>
+    </assembly>
+    <members>
+        <member name="P:System.SR.ArgumentOutOfRange_Enum">
+            <summary>Enum value was out of legal range.</summary>
+        </member>
+        <member name="P:System.SR.ArgumentOutOfRange_NeedNonNegNum">
+            <summary>Non-negative number required.</summary>
+        </member>
+        <member name="P:System.SR.ArgumentOutOfRange_NeedPosNum">
+            <summary>Positive number required.</summary>
+        </member>
+        <member name="P:System.SR.Argument_CannotBeNullOrEmpty">
+            <summary>Argument cannot be null or empty.</summary>
+        </member>
+        <member name="P:System.SR.Argument_EmptyName">
+            <summary>Empty name is not legal.</summary>
+        </member>
+        <member name="P:System.SR.Argument_SemaphoreInitialMaximum">
+            <summary>The initial count for the semaphore must be greater than or equal to zero and less than the maximum count.</summary>
+        </member>
+        <member name="P:System.SR.Argument_WaitHandleNameTooLong">
+            <summary>The length of the name exceeds the maximum limit.</summary>
+        </member>
+        <member name="P:System.SR.IO_AlreadyExists_Name">
+            <summary>Cannot create '{0}' because a file or directory with the same name already exists.</summary>
+        </member>
+        <member name="P:System.SR.IO_FileExists_Name">
+            <summary>The file '{0}' already exists.</summary>
+        </member>
+        <member name="P:System.SR.IO_FileNotFound">
+            <summary>Unable to find the specified file.</summary>
+        </member>
+        <member name="P:System.SR.IO_FileNotFound_FileName">
+            <summary>Could not find file '{0}'.</summary>
+        </member>
+        <member name="P:System.SR.IO_PathNotFound_NoPathName">
+            <summary>Could not find a part of the path.</summary>
+        </member>
+        <member name="P:System.SR.IO_PathNotFound_Path">
+            <summary>Could not find a part of the path '{0}'.</summary>
+        </member>
+        <member name="P:System.SR.IO_PathTooLong">
+            <summary>The specified file name or path is too long, or a component of the specified path is too long.</summary>
+        </member>
+        <member name="P:System.SR.IO_PathTooLong_Path">
+            <summary>The path '{0}' is too long, or a component of the specified path is too long.</summary>
+        </member>
+        <member name="P:System.SR.IO_SharingViolation_File">
+            <summary>The process cannot access the file '{0}' because it is being used by another process.</summary>
+        </member>
+        <member name="P:System.SR.IO_SharingViolation_NoFileName">
+            <summary>The process cannot access the file because it is being used by another process.</summary>
+        </member>
+        <member name="P:System.SR.PlatformNotSupported_AccessControl">
+            <summary>Access Control List (ACL) APIs are part of resource management on Windows and are not supported on this platform.</summary>
+        </member>
+        <member name="P:System.SR.Threading_WaitHandleCannotBeOpenedException_InvalidHandle">
+            <summary>A WaitHandle with system-wide name '{0}' cannot be created. A WaitHandle of a different type might have the same name.</summary>
+        </member>
+        <member name="P:System.SR.UnauthorizedAccess_IODenied_NoPathName">
+            <summary>Access to the path is denied.</summary>
+        </member>
+        <member name="P:System.SR.UnauthorizedAccess_IODenied_Path">
+            <summary>Access to the path '{0}' is denied.</summary>
+        </member>
+        <member name="P:System.SR.WaitHandleCannotBeOpenedException_InvalidHandle">
+            <summary>A WaitHandle with system-wide name '{0}' cannot be created. A WaitHandle of a different type might have the same name.</summary>
+        </member>
+    </members>
+</doc>

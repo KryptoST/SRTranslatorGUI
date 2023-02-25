@@ -381,6 +381,7 @@ namespace SRTranslatorGUI
         {
             int indextemp = 1;
             openFileDialog1.Filter = "srt files (*.srt)|*.srt";
+            openFileDialog1.Title = "Open Files";
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 flowLayoutPanel1.Controls.Clear();
@@ -407,6 +408,35 @@ namespace SRTranslatorGUI
         {
             Debug.WriteLine("Close");
             cmdProcess.Kill();
+        }
+
+        private void AddNewFilesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int indextemp = files.Length + 1;
+            openFileDialog1.Filter = "srt files (*.srt)|*.srt";
+            openFileDialog1.Title = "Add New Files";
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                //flowLayoutPanel1.Controls.Clear();
+                //srtinfos.Clear();
+                //ID = 0;
+                textBox1.Text = folderBrowserDialog1.SelectedPath;
+                
+                foreach(var addfile in openFileDialog1.FileNames)
+                {
+                    files.Append(addfile);
+                }
+                foreach (var file in openFileDialog1.FileNames)
+                {
+                    srtinfo test = new srtinfo();
+                    test.Strname = Path.GetFileName(file);
+                    test.Strstaus = STRFilestatustype.Pending;
+                    test.IndexSrt = indextemp;
+                    flowLayoutPanel1.Controls.Add(test);
+                    indextemp++;
+                    srtinfos.Add(test);
+                }
+            }
         }
     }
 }

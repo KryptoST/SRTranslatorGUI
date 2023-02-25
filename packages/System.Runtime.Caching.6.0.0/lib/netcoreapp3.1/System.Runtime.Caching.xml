@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>System.Runtime.Caching</name>
+    </assembly>
+    <members>
+        <member name="T:System.Runtime.Versioning.OSPlatformAttribute">
+            <summary>
+            Base type for all platform-specific API attributes.
+            </summary>
+        </member>
+        <member name="T:System.Runtime.Versioning.TargetPlatformAttribute">
+            <summary>
+            Records the platform that the project targeted.
+            </summary>
+        </member>
+        <member name="T:System.Runtime.Versioning.SupportedOSPlatformAttribute">
+             <summary>
+             Records the operating system (and minimum version) that supports an API. Multiple attributes can be
+             applied to indicate support on multiple operating systems.
+             </summary>
+             <remarks>
+             Callers can apply a <see cref="T:System.Runtime.Versioning.SupportedOSPlatformAttribute" />
+             or use guards to prevent calls to APIs on unsupported operating systems.
+            
+             A given platform should only be specified once.
+             </remarks>
+        </member>
+        <member name="T:System.Runtime.Versioning.UnsupportedOSPlatformAttribute">
+            <summary>
+            Marks APIs that were removed in a given operating system version.
+            </summary>
+            <remarks>
+            Primarily used by OS bindings to indicate APIs that are only available in
+            earlier versions.
+            </remarks>
+        </member>
+        <member name="T:System.Runtime.Versioning.SupportedOSPlatformGuardAttribute">
+             <summary>
+             Annotates a custom guard field, property or method with a supported platform name and optional version.
+             Multiple attributes can be applied to indicate guard for multiple supported platforms.
+             </summary>
+             <remarks>
+             Callers can apply a <see cref="T:System.Runtime.Versioning.SupportedOSPlatformGuardAttribute" /> to a field, property or method
+             and use that field, property or method in a conditional or assert statements in order to safely call platform specific APIs.
+            
+             The type of the field or property should be boolean, the method return type should be boolean in order to be used as platform guard.
+             </remarks>
+        </member>
+        <member name="T:System.Runtime.Versioning.UnsupportedOSPlatformGuardAttribute">
+             <summary>
+             Annotates the custom guard field, property or method with an unsupported platform name and optional version.
+             Multiple attributes can be applied to indicate guard for multiple unsupported platforms.
+             </summary>
+             <remarks>
+             Callers can apply a <see cref="T:System.Runtime.Versioning.UnsupportedOSPlatformGuardAttribute" /> to a field, property or method
+             and use that  field, property or method in a conditional or assert statements as a guard to safely call APIs unsupported on those platforms.
+            
+             The type of the field or property should be boolean, the method return type should be boolean in order to be used as platform guard.
+             </remarks>
+        </member>
+        <member name="P:System.SR.Config_unable_to_get_section">
+            <summary>Unable to retrieve configuration section '{0}'.</summary>
+        </member>
+        <member name="P:System.SR.TimeSpan_invalid_format">
+            <summary>Invalid configuration: {0}="{1}".  The {0} value must be a time interval that can be parsed by System.TimeSpan.Parse.</summary>
+        </member>
+        <member name="P:System.SR.Value_must_be_non_negative_integer">
+            <summary>Invalid configuration: {0}="{1}".  The {0} value must be a non-negative 32-bit integer.</summary>
+        </member>
+        <member name="P:System.SR.Value_must_be_positive_integer">
+            <summary>Invalid configuration: {0}="{1}".  The {0} value must be a positive 32-bit integer.</summary>
+        </member>
+        <member name="P:System.SR.Value_too_big">
+            <summary>Invalid configuration: {0}="{1}".  The {0} value cannot be greater than '{2}'.</summary>
+        </member>
+        <member name="P:System.SR.Empty_collection">
+            <summary>The collection '{0}' is empty.</summary>
+        </member>
+        <member name="P:System.SR.Collection_contains_null_element">
+            <summary>The collection '{0}' contains a null element.</summary>
+        </member>
+        <member name="P:System.SR.Collection_contains_null_or_empty_string">
+            <summary>The collection '{0}' contains a null or empty string.</summary>
+        </member>
+        <member name="P:System.SR.Method_already_invoked">
+            <summary>The method has already been invoked, and can only be invoked once.</summary>
+        </member>
+        <member name="P:System.SR.Property_already_set">
+            <summary>The property has already been set, and can only be set once.</summary>
+        </member>
+        <member name="P:System.SR.Invalid_state">
+            <summary>Invalid state.</summary>
+        </member>
+        <member name="P:System.SR.Init_not_complete">
+            <summary>Initialization has not completed yet.  The InitializationComplete method must be invoked before Dispose is invoked.</summary>
+        </member>
+        <member name="P:System.SR.Default_is_reserved">
+            <summary>Default is a reserved MemoryCache name.</summary>
+        </member>
+        <member name="P:System.SR.Invalid_expiration_combination">
+            <summary>AbsoluteExpiration must be DateTimeOffset.MaxValue or SlidingExpiration must be TimeSpan.Zero.</summary>
+        </member>
+        <member name="P:System.SR.Invalid_callback_combination">
+            <summary>Only one callback can be specified.  Either RemovedCallback or UpdateCallback must be null.</summary>
+        </member>
+        <member name="P:System.SR.Invalid_argument_combination">
+            <summary>One of the following parameters must be specified: dependencies, absoluteExpiration, slidingExpiration.</summary>
+        </member>
+        <member name="P:System.SR.Update_callback_must_be_null">
+            <summary>CacheItemUpdateCallback must be null.</summary>
+        </member>
+        <member name="P:System.SR.Argument_out_of_range">
+            <summary>'{0}' must be greater than or equal to '{1}' and less than or equal to '{2}'.</summary>
+        </member>
+        <member name="P:System.SR.Empty_string_invalid">
+            <summary>An empty string is invalid.</summary>
+        </member>
+        <member name="P:System.SR.RegionName_not_supported">
+            <summary>The parameter regionName must be null.</summary>
+        </member>
+        <member name="P:System.SR.Value_must_be_boolean">
+            <summary>Invalid configuration: {0}="{1}".  The {0} value must be a boolean.</summary>
+        </member>
+        <member name="P:System.SR.PlatformNotSupported_Caching">
+            <summary>System.Runtime.Caching is not supported on this platform.</summary>
+        </member>
+        <member name="P:System.SR.PlatformNotSupported_PhysicalMemoryLimitPercentage">
+            <summary>The PhysicalMemoryLimitPercentage parameter is not supported on this platform.</summary>
+        </member>
+    </members>
+</doc>

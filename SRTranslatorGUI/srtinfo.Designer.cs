@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.strname = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.strstatus = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -39,23 +38,17 @@
             // 
             // strname
             // 
-            this.strname.Location = new System.Drawing.Point(35, 8);
+            this.strname.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.strname.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.strname.Location = new System.Drawing.Point(35, 0);
             this.strname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.strname.Name = "strname";
-            this.strname.Size = new System.Drawing.Size(275, 21);
+            this.strname.Size = new System.Drawing.Size(275, 31);
             this.strname.TabIndex = 0;
             this.strname.Text = "srtname";
             this.strname.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(164, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Retry";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Visible = false;
             // 
             // progressBar1
             // 
@@ -66,12 +59,18 @@
             // 
             // strstatus
             // 
-            this.strstatus.AutoSize = true;
-            this.strstatus.Location = new System.Drawing.Point(317, 12);
+            this.strstatus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.strstatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.strstatus.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.strstatus.Location = new System.Drawing.Point(317, 0);
             this.strstatus.Name = "strstatus";
-            this.strstatus.Size = new System.Drawing.Size(37, 13);
+            this.strstatus.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.strstatus.Size = new System.Drawing.Size(67, 31);
             this.strstatus.TabIndex = 3;
             this.strstatus.Text = "Status";
+            this.strstatus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pictureBox1
             // 
@@ -84,14 +83,15 @@
             // 
             // Indexsrt
             // 
-            this.Indexsrt.AutoSize = true;
             this.Indexsrt.BackColor = System.Drawing.Color.Green;
+            this.Indexsrt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Indexsrt.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Indexsrt.Location = new System.Drawing.Point(3, 8);
+            this.Indexsrt.Location = new System.Drawing.Point(0, 0);
             this.Indexsrt.Name = "Indexsrt";
-            this.Indexsrt.Size = new System.Drawing.Size(25, 13);
+            this.Indexsrt.Size = new System.Drawing.Size(33, 31);
             this.Indexsrt.TabIndex = 5;
             this.Indexsrt.Text = "999";
+            this.Indexsrt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // srtinfo
             // 
@@ -102,20 +102,17 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.strstatus);
             this.Controls.Add(this.progressBar1);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.strname);
             this.Name = "srtinfo";
-            this.Size = new System.Drawing.Size(605, 31);
+            this.Size = new System.Drawing.Size(574, 31);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Label strname;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label strstatus;
         private System.Windows.Forms.PictureBox pictureBox1;
