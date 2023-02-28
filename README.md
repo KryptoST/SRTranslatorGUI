@@ -13,6 +13,7 @@ Own proxies ✕
 
 # Phython GUI
 https://github.com/KryptoST/SRTranslatorGUI-Python
+
 ![image](https://user-images.githubusercontent.com/30755854/222003739-fe53ef13-027e-46ec-81ec-6b0881a45428.png)
 
 
