@@ -1,0 +1,6 @@
+geckodriver.log
+*.vsidx
+*.lock
+*.suo
+*.ide
+*.dat

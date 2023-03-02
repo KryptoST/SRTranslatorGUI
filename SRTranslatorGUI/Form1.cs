@@ -47,7 +47,7 @@ namespace SRTranslatorGUI
         private void Form1_Load(object sender, EventArgs e)
         {
             comboBox1.SelectedIndex = 6;
-            comboBox2.SelectedIndex = 25;
+            comboBox2.SelectedIndex = 26;
             cmdOutput = new StringBuilder("");
             cmdProcess = new Process();
             cmdoutpout = String.Empty;
@@ -221,6 +221,9 @@ namespace SRTranslatorGUI
                 case "Japanese":
                     scr_Source = "ja";
                     break;
+                case "Korean":
+                    scr_Source = "ko";
+                    break;
                 case "Latvian":
                     scr_Source = "lv";
                     break;
@@ -314,6 +317,9 @@ namespace SRTranslatorGUI
                     break;
                 case "Japanese":
                     scr_Des = "ja";
+                    break;
+                case "Korean":
+                    scr_Source = "ko";
                     break;
                 case "Latvian":
                     scr_Des = "lv";
