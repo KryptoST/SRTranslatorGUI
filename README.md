@@ -9,7 +9,8 @@ Personalized translator ✕
 
 Own proxies ✕
 
-![image](https://user-images.githubusercontent.com/30755854/220760013-dd6ae910-9329-473c-b6d3-68246551a7f2.png)
+![image](https://user-images.githubusercontent.com/30755854/230795571-e9131f00-9cb0-44a4-8f90-daf2f8780f0a.png)
+
 
 # Phython GUI
 https://github.com/KryptoST/SRTranslatorGUI-Python
