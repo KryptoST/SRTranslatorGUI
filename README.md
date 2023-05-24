@@ -3,11 +3,6 @@ SRT files translator GUI
 https://github.com/sinedie/SRTranslator
 
 
-Deepl  ✓
-
-Personalized translator ✕
-
-Own proxies ✕
 
 ![image](https://user-images.githubusercontent.com/30755854/230795571-e9131f00-9cb0-44a4-8f90-daf2f8780f0a.png)
 
