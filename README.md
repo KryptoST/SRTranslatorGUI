@@ -1,4 +1,4 @@
-#SRTranslator
+# SRTranslator
 
 SRTranslator is a translation tool that uses the sinedie translation service. Currently, there are two versions available: 1.x (Graphical Interface) and 2.x (C# Application).
 
